@@ -7,9 +7,10 @@ void shareImage(Uint8List capturedImage) async {
   try {
     final tempImageFile = await saveImageToTempDirectory(capturedImage);
 
-    await SharePlus.instance.share(ShareParams(
-      files: [XFile(tempImageFile.path)],
-    ));
+    await Share.shareXFiles(
+      [XFile(tempImageFile.path)],
+    );
+
     await tempImageFile.delete();
   } catch (e) {
     print('Error sharing image: $e');
