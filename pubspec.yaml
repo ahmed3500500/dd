@@ -90,7 +90,7 @@ dependencies:
 
   permission_handler:
   # flutter_ffmpeg: ^0.4.2
-  flutter_local_notifications: ^19.4.0
+  flutter_local_notifications: ^18.0.1
   lottie:     # ffmpeg_kit_flutter:
   # flutter_media_metadata: ^1.0.0
   # uri_to_file: ^0.2.0
